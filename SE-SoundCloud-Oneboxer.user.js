@@ -80,7 +80,7 @@ setTimeout(function () {
         extractFromUrlAndGetInfo(link.attr('href'), $(this)); //pass URL and message to the function and add the onebox
     });
 
-    observer.observe(document.getElementById('transcript'), { //observe with the mutation observer for NEW messages
+    observer.observe(document.getElementById('chat'), { //observe with the mutation observer for NEW messages
         childList: true,
         subtree: true
     });
