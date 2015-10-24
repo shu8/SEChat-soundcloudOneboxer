@@ -1,0 +1,25 @@
+.sc-onebox {
+    background-color: lightyellow;
+    padding: 5px;
+}
+
+.sc-onebox .info {
+    color: gray;
+}
+
+.sc-onebox .title {
+    font-size: 30px;
+}
+
+.sc-onebox .main img {
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+
+.sc-onebox .main .tags .tag {
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 4px;
+    margin-left: 5px;
+}
