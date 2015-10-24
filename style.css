@@ -8,7 +8,8 @@
 }
 
 .sc-onebox .title {
-    font-size: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .sc-onebox .main img {
