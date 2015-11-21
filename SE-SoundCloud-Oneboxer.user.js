@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SoundCloud Oneboxer
 // @namespace    http://stackexchange.com/users/4337810/
-// @version      1.0
+// @version      1.0.1
 // @description  Oneboxes links to SoundCloud tracks
 // @author       ᔕᖺᘎᕊ (http://stackexchange.com/users/4337810/)
 // @match        *://chat.stackoverfow.com/*
@@ -30,8 +30,9 @@ function extractFromUrlAndGetInfo(link, $obj) {
 
         var tagsList = '';
         if(tags.length) {
-            tags=tags.match(/(?:[^\s"]+|"[^"]*")+/g);
-            for (var i=0; i<tags.length; i++) {
+            var tags=tags.match(/(?:[^\s"]+|"[^"]*")+/g);
+            var len = tags.length;
+            for (var i=0; i < (len > 10 ? 10 : len); i++) {
                 tagsList += "<span class='tag'>"+tags[i].replace(/"/g, '')+"</span>";
             }
         }
